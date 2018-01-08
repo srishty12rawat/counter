@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_toast"
+        android:text="@string/button_label_toast"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:onClick="showToast"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_count"
+        android:textSize="160sp"
+        android:gravity="center"
+        android:text="@string/count_initial_value"
+        android:textStyle="bold"
+        android:background="@color/myBackgroundColor"
+        android:textColor="@color/colorPrimary"
+        android:layout_weight="2"
+        android:layout_below="@id/button_toast"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_count"
+        android:text="@string/button_label_count"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:onClick="countUp"
+        android:layout_below="@id/show_count"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
